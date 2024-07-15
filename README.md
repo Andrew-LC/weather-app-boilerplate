@@ -1,5 +1,7 @@
 # Weather App
 
+![Weather App Screenshot](./public/cover.png "Weather App Interface")
+
 A sleek and responsive weather application built with modern web technologies. This app provides real-time weather information for any city, featuring a clean and intuitive user interface.
 
 ## Features
