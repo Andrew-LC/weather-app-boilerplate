@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="flex justify-center items-center min-h-screen font-inter bg-gray-100">
+    <div class="bg-white shadow-lg rounded-lg overflow-hidden w-96"> <!-- Increased width from w-80 to w-96 -->
+        <div class="bg-black text-white p-6"> <!-- Increased padding from p-4 to p-6 -->
+            <div class="flex items-center justify-between">
+                <div>
+                    <span id="temperature" class="text-6xl font-bold">72°</span> <!-- Increased font size from text-5xl to text-6xl -->
+                    <span id="weather-description" class="text-2xl ml-3">Sunny</span> <!-- Increased font size and margin -->
+                </div>
+                <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <!-- Increased icon size -->
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                </svg>
+            </div>
+            <div id="location" class="text-base mt-2">San Francisco, CA</div> <!-- Increased font size and margin -->
+        </div>
+        <div class="p-6"> <!-- Increased padding from p-4 to p-6 -->
+            <div class="flex justify-between text-sm text-gray-500 mb-5"> <!-- Increased margin bottom -->
+                <span id="last-updated">Updated 30 minutes ago</span>
+                <span id="country">United States</span>
+            </div>
+            <p id="weather-message" class="text-base mb-5"> <!-- Increased font size and margin bottom -->
+                Enjoy the beautiful sunny day in San Francisco! The temperature is a comfortable 72 degrees Fahrenheit, perfect for outdoor activities.
+            </p>
+            <div class="relative">
+                <input id="city-input" type="search" placeholder="Search weather forecast..." 
+                       class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-base"> <!-- Increased padding and font size -->
+                <svg class="absolute left-3 top-3.5 h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <!-- Adjusted position -->
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+</body>
+</html>
