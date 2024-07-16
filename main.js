@@ -8,8 +8,6 @@ const BASE_URL = 'https://api.openweathermap.org/data/2.5/weather';
 const createApiUrl = (city) => (units) => `${BASE_URL}?q=${city}&units=${units}&appid=${API_KEY}`;
 
 
-// create a function getWeather here
-
 
 // Process weather data
 const processWeatherData = (data) => ({
@@ -28,7 +26,6 @@ const updateUI = (weatherData) => {
     document.getElementById('last-updated').textContent = `Updated ${new Date().getMinutes()} minutes ago`;
     document.getElementById('weather-message').textContent = `Enjoy the ${weatherData.description.toLowerCase()} weather in ${weatherData.city}! The temperature is a comfortable ${weatherData.temperature} degrees Fahrenheit, perfect for outdoor activities.`;
 };
-
 
 
 // Event listener for input
